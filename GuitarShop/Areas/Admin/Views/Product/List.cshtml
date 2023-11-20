@@ -53,6 +53,13 @@
                 }
             </tbody>
         </table>
+        @{
+            string userMessage = TempData?["UserMessage"]?.ToString() ?? "";
+        }
+        @if (userMessage != "")
+        {
+            <div class="test-success">@userMessage</div>
+        }
         <a asp-action="Add" class="btn btn-primary">Add New Product</a>
     </div>
 </div>
