@@ -42,7 +42,7 @@ namespace GuitarShop.Controllers
             {
                 Categories = categories,
                 Products = products,
-                Selectedcategory = id
+                SelectedCategory = id
             };
 
             // bind products to view
